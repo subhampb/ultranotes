@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: github.com
+  baseUrl: subhampb.github.io/ultranotes
   ignorePatterns:
     - private
     - templates
