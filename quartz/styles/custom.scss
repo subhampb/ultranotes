@@ -1,3 +1,253 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+/* ==========================================================================
+   UltraNotes - Clean, Professional & Aesthetic Design System
+   ========================================================================== */
+
+/* Modern Smooth Rendering & Typography */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  letter-spacing: -0.011em;
+  line-height: 1.7;
+}
+
+/* Page Layout & Breathing Room */
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.center {
+  padding: 1.5rem 2.5rem;
+  max-width: 840px;
+}
+
+/* Elegant Headers */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* Subtle Links with Micro-animations */
+a {
+  text-decoration: none;
+  transition: color 0.15s ease, opacity 0.15s ease;
+  font-weight: 500;
+}
+
+a.internal {
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background-color: var(--highlight);
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+a.internal:hover {
+  background-color: rgba(99, 102, 241, 0.2);
+  text-decoration: none;
+}
+
+/* Explorer Tree Polish (Clean & Non-crowded) */
+.explorer {
+  padding: 0.75rem 0.5rem;
+}
+
+.explorer h2 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray);
+  margin-bottom: 0.8rem;
+  border-bottom: none;
+}
+
+.explorer ul {
+  padding-left: 0.8rem;
+}
+
+.explorer li {
+  margin: 0.15rem 0;
+}
+
+.explorer a {
+  font-size: 0.92rem;
+  color: var(--darkgray);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  display: block;
+  transition: all 0.15s ease;
+}
+
+.explorer a:hover, .explorer a.active {
+  background: var(--lightgray);
+  color: var(--secondary);
+}
+
+.folder-button {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+/* Graph View Widget Polish */
+.graph {
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  background: var(--light);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.graph:hover {
+  border-color: var(--gray);
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.1);
+}
+
+.graph h3 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray);
+  padding: 0.6rem 0.8rem 0;
+  margin: 0;
+}
+
+/* Table of Contents - Minimal & Sleek */
+.toc {
+  border-left: 1px solid var(--lightgray);
+  padding-left: 1rem;
+}
+
+.toc h3 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray);
+}
+
+.toc ul {
+  padding-left: 0.5rem;
+}
+
+.toc a {
+  font-size: 0.88rem;
+  color: var(--darkgray);
+  opacity: 0.85;
+}
+
+.toc a:hover {
+  opacity: 1;
+  color: var(--secondary);
+}
+
+/* Knowledge Hub Grid System for Homepage */
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hub-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--secondary);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.12);
+}
+
+.hub-card .hub-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.hub-card h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+.hub-card p {
+  font-size: 0.9rem;
+  color: var(--darkgray);
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.hub-card .hub-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Callout Redesign - Clean, Glassmorphic Feel */
+.callout {
+  border-left: 4px solid var(--secondary);
+  border-radius: 0 8px 8px 0;
+  background: var(--highlight);
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.2rem;
+}
+
+.callout-title {
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 0.95rem;
+}
+
+/* Code Blocks */
+pre {
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Math (KaTeX) Display Polish */
+.katex-display {
+  padding: 0.75rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
