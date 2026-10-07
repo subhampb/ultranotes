@@ -16,24 +16,30 @@ A curated digital garden exploring fundamental Physics, cognitive frameworks, an
 
 <div class="hub-grid">
   <a href="Physics/Index" class="hub-card">
-    <div class="hub-icon">⚛️</div>
-    <h3>Physics</h3>
-    <p>Comprehensive theory across classical mechanics, electrodynamics, quantum mechanics, and wave dynamics.</p>
-    <span class="hub-link">Explore 60+ Notes →</span>
+    <div class="hub-icon-tile">⚛️</div>
+    <div class="hub-content">
+      <h3 class="hub-title">Physics</h3>
+      <p class="hub-desc">Comprehensive theory across classical mechanics, electrodynamics, quantum mechanics, and wave dynamics.</p>
+      <span class="hub-action">Explore 60+ Notes <svg class="hub-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+    </div>
   </a>
 
   <a href="Metalearning/Metacognition%20(Chess)" class="hub-card">
-    <div class="hub-icon">🧠</div>
-    <h3>Metalearning</h3>
-    <p>Strategic reflection, cognitive architectures, and systematic methods for accelerated studying.</p>
-    <span class="hub-link">Explore Notes →</span>
+    <div class="hub-icon-tile">🧠</div>
+    <div class="hub-content">
+      <h3 class="hub-title">Metalearning</h3>
+      <p class="hub-desc">Strategic reflection, cognitive architectures, and systematic methods for accelerated studying.</p>
+      <span class="hub-action">Explore Notes <svg class="hub-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+    </div>
   </a>
 
   <a href="Misc/Flirting%20101" class="hub-card">
-    <div class="hub-icon">💡</div>
-    <h3>Interpersonal</h3>
-    <p>Social dynamics, conversation patterns, and interpersonal psychological insights.</p>
-    <span class="hub-link">Explore Notes →</span>
+    <div class="hub-icon-tile">💡</div>
+    <div class="hub-content">
+      <h3 class="hub-title">Interpersonal</h3>
+      <p class="hub-desc">Social dynamics, conversation patterns, and interpersonal psychological insights.</p>
+      <span class="hub-action">Explore Notes <svg class="hub-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+    </div>
   </a>
 </div>
 
